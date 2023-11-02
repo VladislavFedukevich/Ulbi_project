@@ -1,13 +1,11 @@
-import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-interface Props {
+const MainPage = () => {
+    const {t} = useTranslation('main')
 
-}
-
-const MainPage = (props: Props) => {
     return (
         <div>
-            MAIN PAGE
+            {t('Main page')}
         </div>
     )
 }

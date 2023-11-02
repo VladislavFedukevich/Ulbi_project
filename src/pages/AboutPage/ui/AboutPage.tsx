@@ -1,13 +1,11 @@
-import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-interface Props {
+const AboutPage = () => {
+    const {t} = useTranslation('about');
 
-}
-
-const AboutPage = (props: Props) => {
     return (
         <div>
-            ABOUT PAGE
+            {t("О сайте")}
         </div>
     )
 }
